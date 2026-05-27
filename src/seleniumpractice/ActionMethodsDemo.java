@@ -16,6 +16,8 @@ public class ActionMethodsDemo {
 		WebElement SearchButton=driver.findElement(By.xpath("//button[@type=\"submit\"]"));
 		SearchButton.click();
 		Thread.sleep(3000);
+		System.out.println("Title of the page: "+driver.getTitle());
+		System.out.println("URL of the page: "+ driver.getCurrentUrl());
 		driver.quit();
 				
 		
