@@ -31,6 +31,7 @@ public class GetNavigationMethodsDemo {
 		driver.navigate().to("https://www.selenium.dev/documentation/webdriver/");
 		System.out.println("Title of 5th Website: "+driver.getTitle());
 		System.out.println("URL of 5th Website: "+driver.getCurrentUrl());
+		driver.getPageSource();
 		driver.navigate().refresh();
 		driver.quit();
 	}
