@@ -28,13 +28,13 @@ public class HandlingTabsAssignment {
 				driver.get("https://demowebshop.tricentis.com/");
 				System.out.println("Title of 3rd Website: "+driver.getTitle());
 				System.out.println("URL of 3rd Website: "+driver.getCurrentUrl());
-				String thirdPageHandle=driver.getWindowHandle();
+				//String thirdPageHandle=driver.getWindowHandle();
 				System.out.println("****Fourth Website*****");
 				driver.switchTo().newWindow(WindowType.TAB);
 				driver.navigate().to("https://www.hotstar.com/in/home");
 				System.out.println("Title of 4th Website: "+driver.getTitle());
 				System.out.println("URL of 4th Website: "+ driver.getCurrentUrl());
-				String fourthPageHandle=driver.getWindowHandle();
+				//String fourthPageHandle=driver.getWindowHandle();
 				System.out.println("*****Fifth Website*****");
 				driver.switchTo().newWindow(WindowType.TAB);
 				driver.navigate().to("https://www.selenium.dev/documentation/webdriver/");
